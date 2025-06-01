@@ -25,10 +25,10 @@ The next step was to make sure the Raspi would take images when Mio came home (o
 
 During the performance tuning (see further down) I found the following important points:
 
-• Use relatively low resolution images (I used 640x480) - larger images make everything slower but don't really help to recognize things  
-• Take about 6 images per second (framerate setting in motion) - more is too much for the Raspi but with less you loose too much time  
-• Use fs.watch in node - its about 10 times faster than any other watcher function I tested  
-• Optimize other motion settings to your liking - but do not use too many "automatic adjustments" - they need too much CPU  
+* Use relatively low resolution images (I used 640x480) - larger images make everything slower but don't really help to recognize things  
+* Take about 6 images per second (framerate setting in motion) - more is too much for the Raspi but with less you loose too much time  
+* Use fs.watch in node - its about 10 times faster than any other watcher function I tested  
+* Optimize other motion settings to your liking - but do not use too many "automatic adjustments" - they need too much CPU  
 
 The following code was all that was needed to be able to check any movement visible in the camera:
 

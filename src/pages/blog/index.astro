@@ -51,14 +51,38 @@ allPosts = allPosts.sort(
     font-weight: 700;
   }
 
+  .post-item {
+    padding: 1.5em 0;
+    transition: transform 0.2s ease;
+  }
+
+  .post-item:hover {
+    transform: translateY(-2px);
+  }
+
+  .post-item h2 a {
+    color: var(--accent-color);
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+
+  .post-item h2 a:hover {
+    color: var(--primary-color);
+    text-shadow: 0 2px 4px rgba(59, 130, 246, 0.2);
+  }
+
   .post-item-date {
-    color: var(--text-secondary);
+    color: var(--primary-color);
     text-align: left;
     text-transform: uppercase;
     margin-right: 16px;
+    font-size: 0.85em;
+    font-weight: 600;
+    letter-spacing: 0.5px;
   }
 
   hr {
     margin: 60px auto;
+    opacity: 0.6;
   }
 </style>

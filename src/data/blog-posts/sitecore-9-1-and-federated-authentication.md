@@ -19,22 +19,19 @@ The following will describe how you can easily setup Okta as a replacement for I
 
 If you just want to try this, without the hassle of a local setup, you can follow these steps to get the whole thing running on Azure quickly:
 
-• Log into the Azure Portal ([https://portal.azure.com](https://portal.azure.com/) - link for the lazy ones)
-• Click on "Create a Resource", search for Sitecore, select "Sitecore® Experience Cloud"
-• Choose "Create", Enter a Resource Group Name (create new, do not use special characters)
-• Configure required Sitecore Settings
-  ◦ Environment
+* Log into the Azure Portal ([https://portal.azure.com](https://portal.azure.com/) - link for the lazy ones)
+* Click on "Create a Resource", search for Sitecore, select "Sitecore® Experience Cloud"
+* Choose "Create", Enter a Resource Group Name (create new, do not use special characters)
+* Configure required Sitecore Settings
 
 ![Configure Sitecore Environment on Azure](/assets/blog/sitecore-azure-1.jpg)
 
-  ◦ Credentials
 
 ![Configure Sitecore Credentials on Azure](/assets/blog/sitecore-azure-2.jpg)
 
-  ◦ Choose a supported region
 
-• Review the terms 😉
-• Start the deployment
+* Review the terms 😉
+* Start the deployment
 
 Now you need to wait for about 10-15 minutes. Then you'll have two new app service instances (any many other resources). Sitecore is hosted under `https://sitecore91demo-xxxxxx-single.azurewebsites.net` where xxxxxx is a 6-digit number. You can login via `/sitecore` and the password you defined during configuration.
 

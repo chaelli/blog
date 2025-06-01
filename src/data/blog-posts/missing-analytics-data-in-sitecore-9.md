@@ -15,9 +15,9 @@ If you are using external tools to analyze your Sitecore analytics data (based o
 
 Most important cases of missing values:
 
-• **Contacts table**: This table stays completely empty. It was often used to relate a contact id to a logged in user on a database level.
-• **Fact_PageViews.ContactId column**: Contains only empty values.
-• **Fact_Visits.ContactId column**: Contains only empty values.
+* **Contacts table**: This table stays completely empty. It was often used to relate a contact id to a logged in user on a database level.
+* **Fact_PageViews.ContactId column**: Contains only empty values.
+* **Fact_Visits.ContactId column**: Contains only empty values.
 
 If your solution requires this data for reports or to feed an external system with analytics data, you will need to find a way to still get the necessary values. While this could be done in code (the new xConnect API will give you a lot of possibilities), it most certainly will be too slow for reporting use-cases.
 

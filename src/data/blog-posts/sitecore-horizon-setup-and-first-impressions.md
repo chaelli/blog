@@ -19,18 +19,18 @@ While the experience itself is a bit too low-key for my taste, the speed and tid
 
 If you want to try it yourself - it will only take you about half an hour - just follow the described steps:
 
-• Download and install Sitecore 9.3 - I used the "Graphical setup package for XP Single" which provides an installer which completely installs Sitecore with all of its dependencies (thank you Sitecore! Great to have that feature back after a time of manual dev-installs.)
+* Download and install Sitecore 9.3 - I used the "Graphical setup package for XP Single" which provides an installer which completely installs Sitecore with all of its dependencies (thank you Sitecore! Great to have that feature back after a time of manual dev-installs.)
 
 ![The new Sitecore installer](/assets/blog/graphical-install.png)
 
-• Install node (https://nodejs.org/en/download/) and make sure the folder can be read by the IIS Apppool (also check permissions if you already have node installed - and also make sure you add note to your system's PATH).
+* Install node (https://nodejs.org/en/download/) and make sure the folder can be read by the IIS Apppool (also check permissions if you already have node installed - and also make sure you add note to your system's PATH).
 
 If you miss this step, the logfile of Horizon will tell you so ("Ensure that Node.js is installed and can be found in one of the PATH directories.") and the Horizon site (yes, it's a separate IIS site) will look like this:
 
 ![Horizon error screen](/assets/blog/horizon-error.png)
 
-• Download the Horizon package from here: [https://dev.sitecore.net/Downloads/Sitecore_Horizon/93/Sitecore_Horizon_93_Initial_version.aspx](https://dev.sitecore.net/Downloads/Sitecore_Horizon/93/Sitecore_Horizon_93_Initial_version.aspx).
-• Unzip the package, adjust the "parameters.ps1" (example where I used "SC93" as prefix during Sitecore installation)
+* Download the Horizon package from here: [https://dev.sitecore.net/Downloads/Sitecore_Horizon/93/Sitecore_Horizon_93_Initial_version.aspx](https://dev.sitecore.net/Downloads/Sitecore_Horizon/93/Sitecore_Horizon_93_Initial_version.aspx).
+* Unzip the package, adjust the "parameters.ps1" (example where I used "SC93" as prefix during Sitecore installation)
 
 ```powershell
 # Parameters
@@ -42,7 +42,7 @@ $SitecoreIdentityServerSiteName = "SC93identityserver.dev.local"
 $LicensePath = "C:\inetpub\wwwroot\SC93sc.dev.local\App_Data\license.xml"
 ```
 
-• Execute "install.ps1" - wait - and reload the Sitecore Launchpad.
+* Execute "install.ps1" - wait - and reload the Sitecore Launchpad.
 
 ![The Sitecore Launchpad with the Horizon icon](/assets/blog/sc-launchpad.png)
 

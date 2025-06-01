@@ -11,17 +11,15 @@ description: "When multiple delivery servers are running, each one of them rende
 
 When multiple delivery servers are running, each one of them renders all used image sizes. To reduce the performance overhead, we share the prerendered image by using a shared storage (Azure Blob Storage) as MediaCache.
 
-![Datacenter image](/assets/blog/datacenter.jpeg)
-
 Sitecore by default uses a local folder (App_Data/MediaCache) to store prerendered images. This allows it to only resize the image once per size and version. While this is the perfect solution for one server with rare deployments, it has some downsides in setups with multiple delivery servers, dynamic App Service sizing and/or frequent deployments (at least if you clear the App_Data folder during the deployment). In these cases, the images are often rerendered which needs a lot of processing power and creates load on your SQL database. If you further enhance your image processing (e.g. provide WebP or optimized JPEGs with the great [Dianoga](https://github.com/kamsar/Dianoga) module) this aggravates the issue.
 
 Based on the great starting point by [Per Osbeck](https://medium.com/@osbeck.per/sitecore-azure-blob-cache-media-provider-45bd6aa533bf) (uses older Azure libraries), we created a MediaCache implementation that stores all prerendered images in Azure Blob Storage. The following will explain how and also provide the code. Before you implement it, check the following:
 
-• Do I already use a custom MediaProvider (e.g. some configurations of the above mentioned Dianoga module require this)
+* Do I already use a custom MediaProvider (e.g. some configurations of the above mentioned Dianoga module require this)
   ◦ if so, can I override / extend it and do I feel comfortable of doing so?
-• Do I need this? (do I clear MediaCache during deployment or do we spin-up instances often?)
-• Will a CDN handle all the work anyway?
-• Do I use different datacenters for my delivery-servers? (access to a blob storage in another Azure region will add some overhead)
+* Do I need this? (do I clear MediaCache during deployment or do we spin-up instances often?)
+* Will a CDN handle all the work anyway?
+* Do I use different datacenters for my delivery-servers? (access to a blob storage in another Azure region will add some overhead)
 
 If you are sure, you want to try it, first create a AzureBlobMediaCacheRecord class that handles the up-/download of the stream data from and to the blob storage:
 

@@ -15,11 +15,11 @@ So we'd need a way to "reference" components and if possible also have a way to 
 
 The most logical way is to reuse a tool that does all this for us: NPM. There are a few issues with this though:
 
-• Referencing non-js files from within the package
+* Referencing non-js files from within the package
   ◦ Especially: nunjucks templates
-• Working on components while not at the same time publishing all the time to NPM repo
-• Keeping packages private
-• Have consistent styling
+* Working on components while not at the same time publishing all the time to NPM repo
+* Keeping packages private
+* Have consistent styling
 
 I will explain possible solutions for each bullet in the following.
 
@@ -76,11 +76,11 @@ It's possible of course to edit a component, publish it to npm, update the packa
 
 What you'd to:
 
-• Execute "npm link" in the folder where you work on your component
-• Execute "npm link @viu/component-crazyteaser" in the main project folder
-• Make sure you use the same node version for both commands
-• Now you can work in the component directory and the project will be live-updated
-• If this does not work for you (and yes, there are still unsolved issues - especially with dependencies) just work within the node_modules/yourmodule folder and copy paste to wherever you have checked out your module.
+* Execute "npm link" in the folder where you work on your component
+* Execute "npm link @viu/component-crazyteaser" in the main project folder
+* Make sure you use the same node version for both commands
+* Now you can work in the component directory and the project will be live-updated
+* If this does not work for you (and yes, there are still unsolved issues - especially with dependencies) just work within the node_modules/yourmodule folder and copy paste to wherever you have checked out your module.
 
 This creates a symlink between the directories. If you get an error that babel cannot find its configuration, please let me know - we would need to integrate webpack-babel-link into webpack-multi-config. Babel has some known issues when working with symlinks.
 

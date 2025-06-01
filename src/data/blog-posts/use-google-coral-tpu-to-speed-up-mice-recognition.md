@@ -19,8 +19,6 @@ And here you can see the complete "construction". It has a bit more separate par
 
 ![Complete camera holder construction](/assets/blog/camera-holder.jpg)
 
-![Camera holder assembly](/assets/blog/camera-holder.jpg)
-
 ## Need for Speed
 
 As already mentioned in the first part of the blog - speed is everything. And after I tried everything to improve in this area and just could not get below about 700ms for image recognition, I needed to change tactics. A few months ago, Google made a TPU (tensor processing unit) available that is perfect for DIY projects. The one I'm using is the "USB Accelerator". It is sold under the "Coral" brand and is a small device that can be connected and powered via USB. Read more about the product [here](https://coral.withgoogle.com/products/accelerator).

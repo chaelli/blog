@@ -67,7 +67,7 @@ The code will show the editor what elements have been created by the richtext ed
 
 See an example here:
 
-![Rich Text Editor with visual indicators](/assets/blog/rte-visual-feedback.png)
+![Rich Text Editor with visual indicators](/assets/blog/rte.png)
 
 A small issue with the above code is, that the styling of `<br>`s doesn't work in Firefox. This is probably by design - according to specs, the `<br>`-element should only support margins and no additional styling. Luckily for this use-case, Chrome and Internet Explorer do not care and just allow "some" styling. The "hack" above was done by one of our frontend wizards (thanks @ Simon).
 

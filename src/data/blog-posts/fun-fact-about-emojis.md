@@ -38,16 +38,4 @@ What's the length of an emoji? or better - how many bytes are needed to represen
 
 So, what is this all about? `length=1` and `length=2` can be explained by javascripts use of UTF-16. In UTF-16 the most used characters are represented by 1 byte, the less often used (not within the first 65536 characters) are represented by 2 bytes.
 
-It's a bit more complex for the other ones. The are actually created from multiple emojis that are combined with an invisible character or - in the case of skin-tones - have a color-modifier behind the main emoji. Click on the following emojis to see what emojis they consist of (or type/paste one into the input area):
-
-**Click on an emoji to see its parts:**
-
-👁️‍🗨️
-👩‍❤️‍💋‍👨
-👍🏾
-👨‍👩‍👦‍👦
-
-**Try your own:**
-[Input field would be here]
-
-Depending on your browser and operating system, you might not see all emojis / parts correctly.
+It's a bit more complex for the other ones. The are actually created from multiple emojis that are combined with an invisible character or - in the case of skin-tones - have a color-modifier behind the main emoji.

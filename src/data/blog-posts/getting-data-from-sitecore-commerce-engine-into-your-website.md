@@ -203,7 +203,7 @@ Now you should be able to request the orders via a simple request (e.g. try it w
 
 To be able to access the new controller from within your Sitecore solution, you need to regenerate the proxy class (Sitecore.Commerce.ServiceProxy).
 
-![OData Connection](/assets/blog/odata-connection.jpg)
+![OData Connection](/assets/blog/odata-connection.png)
 
 1. Copy the Service Proxy solution (Sitecore.Commerce.ServiceProxy.slnSDK) from the commerce SDK into a folder that has no spaces in the page (if you are this far, this will probably not surprise you ;)
 2. Use "Add Connected Service" to install "OData Connected Service" (at least if you are using VS 2017). You need to click on "Find more services…" to be able to search for "OData Connected Service"
@@ -224,5 +224,5 @@ That's it - quite a process to get a bit of data from the engine. But once an ex
 
 The two blogs that helped me most, when implementing the above described where:
 
-• [Sitecore commerce – Adding and setting new fields on the cart. An end to end example, from UI to API.](https://websterian.com/2017/10/09/sitecore-commerce-adding-and-setting-new-fields-on-the-cart-an-end-to-end-example/) by websterian
-• [Sitecore Commerce 8.2.1 — Working with Commerce Engine APIs](https://medium.com/@prabathcy/sitecore-commerce-commerce-engine-api-design-4aaad6de7d6f) by Prabath Yapa
+* [Sitecore commerce – Adding and setting new fields on the cart. An end to end example, from UI to API.](https://websterian.com/2017/10/09/sitecore-commerce-adding-and-setting-new-fields-on-the-cart-an-end-to-end-example/) by websterian
+* [Sitecore Commerce 8.2.1 — Working with Commerce Engine APIs](https://medium.com/@prabathcy/sitecore-commerce-commerce-engine-api-design-4aaad6de7d6f) by Prabath Yapa
