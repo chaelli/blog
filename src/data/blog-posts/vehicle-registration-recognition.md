@@ -11,8 +11,6 @@ description: "Imagine, all you need for an insurance quote would be a picture of
 
 Imagine, all you need for an insurance quote would be a picture of your vehicle registration and a few seconds of waiting time. This idea was born on a so-called «VIUday».
 
-![Hand that takes picture of vehicle registration with smartphone](/assets/blog/taking-picture-1920.jpg)
-
 What are these days for? We intentionally take breakout sessions from which we draw inspirations, new perspectives and fresh ideas. A perfect place to experiment and learn in order to serve our customers not only with state-of-the-art solutions, but also with cutting-edge technology. So getting a speed offering was a challenge we passionately took on and today the idea has gone live.
 
 We have been working for Zurich Insurance Switzerland for many years and always appreciated the open-minded culture where business and IT work hand in hand. Based on this background, we were confident that Zurich would be willing to give our intention to combine image recognition with the buying process a go. Being constantly on the lookout for customer-friendly services and convenient processes for their customers, the Digital Business Team bought into the idea immediately.
